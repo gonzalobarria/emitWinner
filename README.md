@@ -1,13 +1,22 @@
-# Sample Hardhat Project
+# Interacting with Alchemy Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates how to interact with a another contract.
 
-Try running some of the following tasks:
+Install dependencies:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+npm i -D hardhat -- yes to all
+npm i dotenv
+```
+
+To deploy your contract in Goerli Testnet:
+
+```shell
+npx hardhat run scripts/deploy.js --network goerli
+```
+
+To emit the winner:
+
+```shell
+npx hardhat run scripts/triggerWinner.js --network goerli
 ```
