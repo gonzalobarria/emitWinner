@@ -15,8 +15,9 @@ To deploy your contract in Goerli Testnet:
 npx hardhat run scripts/deploy.js --network goerli
 ```
 
-To emit the winner:
+Replace the variable CONTRACT_ADDRESS in the script triggerWinner.js with your deployed contract address and run:
 
 ```shell
 npx hardhat run scripts/triggerWinner.js --network goerli
 ```
+Done!
